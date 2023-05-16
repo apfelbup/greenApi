@@ -1,0 +1,24 @@
+$mainText-color: #8196a0;
+$error-color: #b33d3d;
+$block-color: #202c33;
+
+@mixin button {
+    font-family: 'Wix Madefor Text', sans-serif;
+    font-size: 1.4rem;
+    color: #fff;
+    background-color: #13cf9c;
+    cursor: pointer;
+    border: none;
+    &:hover{
+        opacity: 0.8;
+    }
+}
+
+@mixin input {
+    font-family: 'Wix Madefor Text', sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    border: none;
+    outline: none;
+
+}

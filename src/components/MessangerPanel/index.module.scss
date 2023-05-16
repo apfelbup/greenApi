@@ -1,0 +1,60 @@
+@import "../../variables.scss";
+
+.wrapper{
+    position: relative;
+    background-color: #0b141a;
+    width: 70vw;
+    height: 95vh;
+}
+
+.undefinedMess{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-weight: 600;
+    font-size: 2rem;
+    color: $mainText-color;
+}
+
+.messangerBlock{
+    .header{
+        background-color: $block-color;
+        padding: 30px;
+        p{
+            font-weight: 600;
+            font-size: 1.5rem;
+            color: #fff;
+            text-align: left;
+        }
+    }
+
+    .messagesArea{
+        overflow-y: auto;
+        overflow-x: hidden;
+        display: flex;
+        justify-content: end;
+        align-items: flex-end;
+        height: 76vh;
+    }
+
+    .sendArea{
+        padding: 20px;
+        background-color: $block-color;
+        display: flex;
+        textarea {
+            width: 100%;
+            color: #fff;
+            font-size: 1.2rem;
+            padding: 10px;
+            resize: none;
+            background-color: #2a3942;
+            outline: none;
+            border: none;
+        }
+        button{
+            @include button;
+        }
+    }
+
+}

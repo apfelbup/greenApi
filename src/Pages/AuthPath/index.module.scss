@@ -1,0 +1,59 @@
+@import "../../variables.scss";
+
+.wrapper{
+    color: $mainText-color;
+    position: relative;
+    height: 100vh;
+}
+
+h3{
+    color:#fff;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.authDescription{
+    margin-bottom: 70px;
+    font-size: 1.1rem;
+}
+
+.innerBox{
+    position: absolute;
+    background-color: #222e35;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 4em 5em;
+
+    label+label{
+        display: block;
+        margin-top: 40px;
+    }
+    label{
+        margin-bottom: 90px;
+        p{
+            text-align: left;
+            margin-bottom: 10px;
+        }
+        input{
+            @include input;
+            padding: 10px 0;
+            max-width: 100%;
+            width: 100%;
+        }
+    }
+
+    button{
+        @include button;
+        max-width: 100%;
+        width: 100%;
+        padding: 10px 30px;
+    }
+
+    .error{
+        color: $error-color;
+        margin-bottom: 10px;
+    }
+}
+

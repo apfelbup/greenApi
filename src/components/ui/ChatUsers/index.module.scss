@@ -1,0 +1,16 @@
+@import "../../../variables.scss";
+
+.chatsPanel{
+    cursor: pointer;
+    p{
+        padding: 20px 5px;
+        text-align: left;
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
+
+    &:hover{
+        background-color: $block-color;
+    }
+}
+

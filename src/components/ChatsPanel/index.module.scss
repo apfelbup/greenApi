@@ -1,0 +1,33 @@
+@import "../../variables.scss";
+
+.chatsPanel{
+    width: 23vw;
+    color: #fff;
+}
+
+.createBlock{
+    margin-bottom: 2.5em;
+    .createForm{
+        display: flex;
+        margin-bottom: 10px;
+        button{
+            @include button;
+        }
+        input{
+            @include input;
+            color: $mainText-color;
+            background-color: $block-color;
+            width: 100%;
+            padding: 10px;
+
+        }
+    }
+    p{
+        text-align: left;
+        font-weight: 500;
+        color: $mainText-color;
+    }
+    .error{
+        color: $error-color;
+    }
+}
